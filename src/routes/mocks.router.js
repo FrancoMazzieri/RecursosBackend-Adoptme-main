@@ -8,7 +8,7 @@ const router = Router();
 // === /mockingpets ===
 router.get("/mockingpets", async (req, res) => {
   try {
-    const pets = generatePets(5); // ejemplo: 5 mascotas
+    const pets = generatePets(5); 
     res.json({ status: "success", payload: pets });
   } catch (error) {
     res.status(500).json({ status: "error", error: error.message });
